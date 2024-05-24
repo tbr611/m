@@ -1,16 +1,38 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <!-- Optional: Add some basic CSS for styling -->
+    <style>
+        body {font-family: Arial, sans-serif;}
+        .container {width: 300px; padding: 16px; margin: 0 auto;}
+        input[type=text], input[type=email], input[type=password] {width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;}
+        button {background-color: #4CAF50; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%;}
+        button:hover {opacity: 0.8;}
+    </style>
 </head>
 <body>
-xxxxxxxxxx
+
+<div class="container">
+    <h2>User Registration</h2>
+    <form action="/submit_registration" method="post">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <label for="confirm_password"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
 </body>
 </html>
